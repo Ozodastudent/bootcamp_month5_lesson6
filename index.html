@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>lesson-6</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="contact_card mt-5 mx-auto">
+          <div class="title_box">
+            <h2 class="text-center text-white">Contact book</h2>
+          </div>
+          <div class="d-flex px-3 pt-5 pb-2">
+            <div class="new_contact w-50">
+              <h4 class="mb-4">New Contact</h4>
+              <form
+                action="https://echo.htmlacademy.ru/"
+                class="form"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  class="input_name form-control"
+                  placeholder="Name"
+                />
+                <input
+                  list="relationship_options"
+                  id="relationship-choice"
+                  class="form-control mt-3 mb-3"
+                  name="relationship-choice"
+                  placeholder="Relationship"
+                />
+                <datalist id="relationship_options">
+                  <option value="Family"></option>
+                  <option value="Mother"></option>
+                  <option value="Father"></option>
+                  <option value="Friends"></option>
+                  <option value="Colleague"></option>
+                </datalist>
+                <input
+                  type="number"
+                  class="contact_phone form-control"
+                  placeholder="Phone"
+                />
+                <button type="submit" class="btn btn-success w-100 mt-4">
+                  Create Contact
+                </button>
+              </form>
+            </div>
+            <!-- second part -->
+            <div class="created_contact w-50 ms-1 ms-md-3 ms-lg-5">
+              <h4 class="mb-4 text-center">New Contact</h4>
+              <ul class="contact_list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
